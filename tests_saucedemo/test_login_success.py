@@ -58,6 +58,12 @@ def proyecto_flujo_compra():
         boton_add_to_cart.click()
         time.sleep(2)
 
+        if "inventory.html" in driver.current_url:
+            print("¡TC-02 Completado con éxito!")
+        else:
+            print("Falló el proceso de agreagr un producto al carrito.")
+            return  # Detiene la ejecución si falla
+
         # ==========================================================
         # TC-03: IR AL CARRITO
         # ==========================================================
@@ -69,6 +75,12 @@ def proyecto_flujo_compra():
         boton_cart.click()
         time.sleep(2)
 
+        if "cart.html" in driver.current_url:
+            print("¡TC-03 Completado con éxito!")
+        else:
+            print("Falló el proceso de ir al carrito.")
+            return  # Detiene la ejecución si falla
+
         # ==========================================================
         # TC-04: FORMULARIO DE DESPACHO (CHECKOUT)
         # ==========================================================
@@ -79,6 +91,12 @@ def proyecto_flujo_compra():
         )
         boton_checkout.click()
         time.sleep(2)
+
+        if "checkout-step-one.html" in driver.current_url:
+            print("¡TC-04 Completado con éxito!")
+        else:
+            print("Falló el proceso de ir al checkout.")
+            return  # Detiene la ejecución si falla
 
         campo_checkout = driver.find_element(By.ID, "first-name")
         campo_checkout.send_keys("Pepe")
@@ -92,6 +110,12 @@ def proyecto_flujo_compra():
         )
         boton_checkout.click()
         time.sleep(2)
+
+        if "checkout-step-two.html" in driver.current_url:
+            print("¡TC-04 Completado con éxito!")
+        else:
+            print("Falló el proceso 2 del checkout.")
+            return  # Detiene la ejecución si falla
 
         # ==========================================================
         # TC-05: FINALIZAR COMPRA
