@@ -27,3 +27,7 @@ El script ejecuta de manera secuencial los siguientes casos de prueba (Test Case
 2. Abre la terminal en la raíz del proyecto y crea el entorno virtual:
    ```bash
    python -m venv .venv
+3. Instala las dependencias necesarias:
+   pip install -r requirements.txt
+4. Ejecuta la prueba:
+   python tests_saucedemo/test_login_success.py
