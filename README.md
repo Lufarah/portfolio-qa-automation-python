@@ -28,6 +28,8 @@ El script ejecuta de manera secuencial los siguientes casos de prueba (Test Case
    ```bash
    python -m venv .venv
 3. Instala las dependencias necesarias:
+   ```bash
    pip install -r requirements.txt
-4. Ejecuta la prueba:
+5. Ejecuta la prueba:
+   ```bash
    python tests_saucedemo/test_login_success.py
