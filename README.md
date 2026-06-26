@@ -33,3 +33,20 @@ El script ejecuta de manera secuencial los siguientes casos de prueba (Test Case
 5. Ejecuta la prueba:
    ```bash
    python tests_saucedemo/test_login_success.py
+
+
+## 🌐 Módulo 2: Automatización de APIs (Backend)
+
+Para complementar mis habilidades de automatización en el Frontend, agregué este módulo enfocado en pruebas de servicios y Backend.
+
+### 🛠️ Tecnologías Utilizadas
+* **Librería:** Requests (Python)
+* **API de Pruebas:** JSONPlaceholder REST API
+
+### 🚀 Casos de Prueba Automatizados
+1. **TC-01: Crear Usuario (POST)**
+   * **Objetivo:** Validar la creación de un registro enviando un payload JSON.
+   * **Validación:** Status Code `201 Created` y retorno de ID por el servidor.
+2. **TC-02: Leer Usuario (GET)**
+   * **Objetivo:** Validar la obtención de datos de un usuario existente (ID 1).
+   * **Validación:** Status Code `200 OK` y consistencia en la respuesta.
